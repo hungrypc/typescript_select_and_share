@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Understanding TypeScript</title>
   <script src="dist/bundle.js" defer></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
+  <div class="ui container">
+    <h1 class="ui block header">Search and Share</h1>
+    <div id="map" class="ui container segment">
+      <p>Please enter an address</p>
+    </div>
+    <form class="ui form">
+      <div class="ui center aligned basic segment">
+        <div class="ui left icon action input">
+          <i class="search icon"></i>          
+          <input type="text" id="address" name="address">
+          <div type="submit" class="ui blue submit button">Search Address</div>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
